@@ -3,7 +3,7 @@ public without sharing class DailyLeadProcessor implements Schedulable {
     List<Lead> updatedLeadSource = new List<Lead>();
 
     for (Lead ld : [SELECT Id, Name, LeadSource FROM Lead LIMIT 200]) {
-      ld.LeadSource = 'DreamForce';
+      ld.LeadSource = 'Dreamforce';
 
       updatedLeadSource.add(ld);
     }
